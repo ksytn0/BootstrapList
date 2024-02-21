@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습_그리드를 활용한 반응형 갤러리</title>
+
+    <style>
+        body{padding:10px;}
+        div{background:#ff0; border:2px solid #f00;}
+        .gallery{ background:#ccc;}
+        .gallery img{width:100%;}
+    </style>
+
+    <!-- 부트스트랩 css서식 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 부트스트랩 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h2>실습_그리드를 활용한 반응형 갤러리</h2>
+    
+    <p>class="row" == display:flex속성과 같다.</p>
+    <p>pc해상도일 경우 가로 4칸 = col-xl-3</p>
+    <p>tablet(큰거)해상도일 경우 가로 3칸 = col-lg-4</p>
+    <p>tablet(중간거)해상도일 경우 가로 2칸 = col-md-6</p>
+    <p>tablet(작은거)해상도일 경우 가로 2칸 = col-sm-6</p>
+    <p>mobile해상도일 경우 가로 1칸 = none</p>
+    
+    <article class="gallery">
+        <div class="gallery row">
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+            <figure class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <img src="./images/agency-thumb.jpg" alt="">
+                <figcaption>이미지 설명</figcaption>
+            </figure>
+        </div>
+    </article>
+</body>
+</html>
