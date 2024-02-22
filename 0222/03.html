@@ -20,7 +20,7 @@
     <p>모달 윈도우는 부모창을 배경으로 어둡게 하고, 자식요소가 화면의 가운데 중앙에 배치하도록 하며, 오른쪽 상단(이미지 배너 아래)에 '닫기'버튼을 만들어서 닫을 수 있도록한다.</p>
     
     <h3>모달 구조 - .modal .modal-dialog, .modal-content, .modal-header, .modal-body, .modal-footer</h3>
-    <div class="modal fade" tabindex="-1" id="exec" aria-hidden="true">
+    <div class="modal fade" tabindex="-1" id="exec" aria-hidden="true" data-bs-backdrop='static'>
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -42,10 +42,10 @@
     <button type="button" class="btn btn-primary" valu="모달위도 띄우기" data-bs-toggle="modal" data-bs-target="#exec">모달윈도 띄우기</button>
 
     <h3>모달 배경을 클릭하지 않고 '닫기'버튼을 클릭하였을 경우에만 modal window숨기기</h3>
-    <p>data-bs-dismiss="modal"</p>
+    <p>close버튼에 data-bs-dismiss="modal"</p>
 
     <h3>모달 배경을 클릭하였을 경우는 modal window숨겨지지 않게하기</h3>
-    <p>??</p>
+    <p>class modal에 data-bs-backdrop='static'</p>
 
 
 </body>
